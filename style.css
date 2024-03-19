@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+:root{
+    --color:#aae13b;
+}
+#carouselId ol li{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+.carousel-inner .active img{
+    position: relative;
+}
+.carousel-inner .active .carousel-body{
+    position: absolute;
+    bottom: 40%;
+    color: #ffffff;
+    margin-left: 25rem;
+}
+.carousel-inner .active .carousel-body h1{
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.carousel-inner .active .carousel-body p{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+.carousel-inner .active .carousel-body button{
+    height: 4rem;
+    width: 9rem;
+    background-color: var(--color);
+    border: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0.7rem;
+}
+.categories-wrapper #popular{
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.container{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.row .products img{
+ width: 5rem;
+ height: 4rem;
+ object-fit: cover;
+}
+.row .products h5{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.row .products p{
+    font-size: 0.9rem;
+}
+.deals-of-the-day hr{
+width: 8rem;
+background-color: #000;
+height: 0.2rem;
+margin-left: 30rem;
+}
+.deals-of-the-day .fa-star{
+    color: #ffd000;
+}
+.deals-of-the-day .dull{
+    color: #e6e6e6;
+}
+.cards{
+    width: 30rem;
+    height: 18rem;
+    border: var(--color) 0.3rem solid;
+    padding: 0.7rem;
+    gap: 1.5rem;
+}
+.cards img{
+    flex-basis: 50%;
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;
+    margin-top: 4rem;
+}
+.details .five{
+    margin-top: 0.8rem;
+}
+.details .fiver{
+    margin-top: -0.6rem;
+}
+.details{
+    flex-basis: 50%;
+}
+.details #price{
+    font-weight: 700;    
+    color: var(--color);
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+.details .fruit{
+    margin-top: -0.8rem;
+}
+.details .vegetable{
+    margin-bottom: 1rem;
+}
+
+.details .bold{
+  width: 3rem;  
+  height: 3rem;
+  background-color: var(--color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 0.3rem;
+  text-align: center;
+  margin-right: 0.7rem;
+  margin-top: 0.6rem;
+}
+.details small{
+    font-weight: 500;
+}
+.products{
+    margin-top: 6rem;
+}
+.products h2{
+    color: var(--color);
+    font-weight: 700;
+}
+.products p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.product-wrapper{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 6rem 0rem 6rem 0rem;
+}
+.contain{
+    text-align: center;
+    box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 1);
+    outline: .1rem solid #eadfe5;
+    outline-offset: 1rem;
+    padding: 2rem 1rem;
+    width: 90%;
+}
+.contain:hover{
+    outline: .2rem solid var(--color);
+    outline-offset: 0rem; 
+}
+.contain img{
+    width: 10rem;
+    height: 10rem;
+}
+.contain:hover img{
+ transform: scale(.9);
+}
+.contain div{
+    font-size: 1rem;
+    font-weight: 600;
+    padding:.2rem 0;
+    color: #000;
+}
+.contain:hover div{
+    color: var(--color);
+}
+
+
+
+@media (min-width: 0px) and (max-width: 576px){
+    .cards{
+        width: 20rem;
+        height: 15rem;
+        border: var(--color) 0.3rem solid;
+        padding: 0.5rem;
+       margin-top: 2rem;
+    }
+    .cards img{
+        flex-basis: 50%;
+        width: 7rem;
+        height: 6rem;
+        margin-top: 4rem;
+    }
+    .details{
+        flex-basis: 60%;
+    }
+    .details #price{
+        font-size: 1.2rem;
+        margin-top: -1.4rem;
+    }
+    .details p{
+        font-size: 1rem;
+    }
+    .details .five{
+        margin-bottom: -0.4rem;
+    }
+    .details .fiver{
+        margin-top: -1rem;
+    }
+    .details .bold{
+        width: 2rem;  
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .details small{
+        font-size: 0.8rem;
+    }
+    .details .five{
+        margin-top: 1rem;
+    }
+    .product-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .contain{
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .carousel-inner .active .carousel-body{
+        bottom: 10%;
+        margin-left: 2rem;
+    }
+    .carousel-inner .active .carousel-body h1{
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .carousel-inner .active .carousel-body p{
+        margin-top: 0.2rem;
+        font-weight: 700;
+    }
+    .carousel-inner .active .carousel-body button{
+        height: 3rem;
+        width: 6rem;
+        font-size: 1rem;
+    }
+}
